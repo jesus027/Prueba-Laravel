@@ -1,0 +1,11 @@
+SELECT
+    o.fecha as fecha,
+    o.num_orden as num_orden,
+    o.monto as monto,
+    o.estado as estado,
+    od.articulo as articulo,
+    od.cantidad as cantidad,
+    od.precio as precio,
+    od.total as total,
+    u.name as name
+FROM orders as o, ordersdetails as od, users as u;
